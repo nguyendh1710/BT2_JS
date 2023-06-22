@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>BÀI TẬP JS 2</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- một câu lệnh giúp gắn cdn fontawesome  -->
+  <!-- câu lệnh fa6-cdn  -->
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- gg font hind  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- animate css  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <!-- my css  -->
+  
+  <link rel="stylesheet" href="style.css"
+ />
+</head>
+
+<body>
+  <header>
+  
+  </header>
+  <main>
+   
+    
+
+    <!-- project  -->
+    <section class="project py-5">
+      
+      <div class="container-md">
+        <!-- title  -->
+        <div class="project_title text-center">
+          <h2 class="fw-bold text-bg-primary">BÀI TẬP JS 2</h2>
+         
+        </div>
+
+        <!-- content  -->
+        <div class="project_content">
+           <!-- button  -->
+           <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bài 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bài 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-4"
+                type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Bài 4</button>
+            </li>
+            
+             <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-6"
+                type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Sơ đồ 3 khối</button>
+            </li>
+           </ul>
+           <!--  chuyen trang  -->
+           <div class="tab-content" id="pills-tabContent">
+              <!--  bai1  -->
+              <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <h3 class="text-center">QUẢN LÝ TUYỂN SINH </h3>
+                <!-- tạo ra một container để chứa các column của bootstrap  -->
+                <div class="container w-100">
+                   <div class="row gy-3">
+                      <!-- column của mỗi item  -->
+                      <div class="col-12 col-sm-6 col-lg-4">
+                          
+                              <!-- item  -->
+                              
+                              <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                <h2>Nhập vào điểm chuẩn</h2>
+                                <input class="input100" type="text" name="name" placeholder=" Điểm chuẩn" id="input-score"/>
+                                <span class="focus-input100"></span>
+                              </div>
+
+                              <form>
+                              <div class="khuvuc">
+                                  <h2>Vui lòng chọn khu vực:</h2>
+                               
+                                  <ul>
+                                   <li class="type">
+                                     <input type="radio" name="selector" id="A" />
+                                     <label for="A"> A </label>
+                                     <div class="check"></div>
+                                   </li>
+                       
+                                   <li class="type">
+                                     <input type="radio" name="selector" id="B">
+                                     <label for="B"> B </label>
+                                     <div class="check"></div>
+                                   </li>
+                       
+                                   <li class="type">
+                                     <input type="radio" name="selector" id="C" />
+                                     <label for="C"> C </label>
+                                     <div class="check"></div>
+                                   </li>
+
+                                   <li class="type">
+                                    <input type="radio" name="selector" id="X" />
+                                    <label for="X"> X </label>
+                                    <div class="check"></div>
+                                  </li>
+                                  </ul>
+                              </div>
+                              
+                            </form>
+                            <form>
+                              <div class="doituong">
+                                <h2>Vui lòng chọn đối tượng:</h2>
+                                  <ul>
+                                <li class="type">
+                                  <input type="radio" name="selector" id="1" />
+                                  <label for="1"> 1 </label>
+                                  <div class="check"></div>
+                                </li>
+                    
+                                <li class="type">
+                                  <input type="radio" name="selector" id="2">
+                                  <label for="2"> 2 </label>
+                                  <div class="check"></div>
+                                </li>
+                    
+                                <li class="type">
+                                  <input type="radio" name="selector" id="3" />
+                                  <label for="3"> 3 </label>
+                                  <div class="check"></div>
+                                </li>
+
+                                <li class="type">
+                                  <input type="radio" name="selector" id="0" />
+                                  <label for="0"> 0 </label>
+                                  <div class="check"></div>
+                                </li>
+
+
+                                  </ul>
+
+                               
+                              </div>
+
+                            </form>     
+                               <div style="clear: both"></div>
+                       
+                               <form class="contact100-form">
+
+                                 <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                   <h2>Nhập vào điểm môn 1</h2>
+                                   <input class="input100" type="text" name="name" placeholder="Nhập vào điểm môn 1" id="input-score1"/>
+                                   <span class="focus-input100"></span>
+                                 </div>
+
+
+
+                                 <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                  <h2>Nhập vào điểm môn 2</h2>
+                                  <input class="input100" type="text" name="name" placeholder="Nhập vào điểm môn 2" id="input-score2"/>
+                                  <span class="focus-input100"></span>
+                                 </div>
+
+
+                                 <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                  <h2>Nhập vào điểm môn 3</h2>
+                                  <input class="input100" type="text" name="name" placeholder="Nhập vào điểm môn 3" id="input-score3"/>
+                                  <span class="focus-input100"></span>
+                                 </div>
+
+                                 
+                                
+                       
+                                 <div class="wrap-contact100-form-btn">
+                                   <div class="contact100-form-bgbtn"></div>
+                                   <button type="button" class = "contact100-form-btn bg-gradient w-100" onclick="ex1()" > KẾT QUẢ </button>
+                                 </div>
+                                 
+                                 
+                               
+                               
+                               </form>
+                       
+                              
+                             
+                             
+        
+            
+                      </div>
+                   </div>
+                </div>
+              
+              </div>
+
+              <!--  bai2  -->
+              <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><!-- column của mỗi item  -->
+                <h3 class="text-center">Tính tiền điện </h3>
+                <div class="col-12 col-sm-6 col-lg-4">
+              
+                         <!-- item  -->
+                         <div class="project_text py-3 px-4  text-center">
+                        
+                             <div class="mb-3">
+                   
+                                <input class="form-control " id="input_hoten" placeholder="Nhập họ tên" />
+                             </div>
+                             <div class="mb-3">
+                   
+                                <input class="form-control " id="input_kw" placeholder="Nhập số kw" />
+                             </div>
+                             
+
+                            <br/>
+                
+                        </div>
+                        
+                        <button class="btn btn-success mt-2 ms-4 py-2 px-2 w-50" onclick ="ex2()"> Tính tiền điện </button>
+                </div>
+                 
+              </div>
+              
+              <!--  bai3  -->
+              <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><!-- column của mỗi item  -->
+                <h3 class="text-center">Tính thuế thu nhập cá nhân </h3>
+                <div class="col-12 col-sm-6 col-lg-4">
+                      
+                
+                     <!-- item  -->
+                     <div class="project_text py-3 px-4  text-center">
+                     
+                         <div class="mb-3">
+             
+                             <input class="form-control " id="input_name" placeholder="Nhập họ tên" />
+                         </div>
+                         <div class="mb-3">
+             
+                             <input class="form-control " id="input_income" type="number" placeholder="Tổng thu nhập năm" />
+                         </div>
+                         <div class="mb-3">
+             
+                           <input class="form-control " id="input_per" placeholder="Số người phụ thuộc" />
+                         </div>
+
+                         <br/>
+          
+                    </div>
+                    <button class="btn btn-success mt-2 ms-4 py-2 px-2 w-50" onclick="ex3()">Tính tiền thuế</button>
+                </div>
+      
+        
+             
+                    
+              </div>
+
+              <!--  bai4  -->
+              <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><!-- column của mỗi item  -->
+                <h3 class="text-center"> Tính tiền cáp </h3>
+                <div class="col-12 col-sm-6 col-lg-4">
+                        
+                        <!-- item  -->
+               
+                        <div class="project_text py-3 px-4  text-center">
+                    
+                         
+
+
+                             <h2>Chọn loại khách hàng</h2>
+                              
+                             <select id="gender" onchange="changed()">
+                              <option value=""> -- Chọn -- </option>
+                              <option value="dn">Doanh nghiệp</option>
+                              <option value="nd"> Nhà dân </option>
+                          </select>
+                          
+                               <br/>
+                              
+                                 <input class="form-control "id="show_message"  placeholder="Số kết nối" />
+                               
+                              
+                              
+                             
+                              
+
+                                <br/>
+                                <div class="mb-3">
+              
+                                  <input class="form-control " id="input_chan" placeholder="Nhập mã khách hàng" />
+                                </div>
+  
+                                <br/>
+                          <div class="mb-3">
+              
+                            <input class="form-control " id="input_chan" placeholder="Số kênh cao cấp" />
+                          </div>
+
+                          <br/>
+           
+                        </div>
+                        <button class="btn btn-success mt-2 ms-4 py-2 px-2 w-50" onclick = "ex4()">Tính tiền cáp</button>
+                </div>
+       
+         
+              
+             </div>
+              
+              
+             <!--  so-do-3-khoi  -->
+              <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><!-- column của mỗi item  -->
+           
+                <h3 class="text-center"> Sơ đồ 3 khối </h3>
+                <div class="col-12 col-sm-6 col-lg-4">
+                        <!-- item  -->
+                        <div class="project_text py-3 px-4  text-center">
+                          
+                          <div class="mb-3">
+                              <h3 class="fw-bold"> Bài 1</h3>
+                              <img src="so-do-3-khoi/BAI-1.png" alt="">
+                          </div>
+                          <div class="mb-3">
+                            <h3 class="fw-bold"> Bài 2</h3>
+                            <img src="so-do-3-khoi/BAI-2.png" alt="">
+                         </div>
+                         <div class="mb-3">
+                          <h3 class="fw-bold"> Bài 3</h3>
+                          <img src="so-do-3-khoi/BAI-3.png" alt="">
+                        </div>
+                        <div class="mb-3">
+                          <h3 class="fw-bold"> Bài 4</h3>
+                          <img src="so-do-3-khoi/BAI-4.png" alt="">
+                        </div>
+                        <div class="mb-3">
+                          <h3 class="fw-bold"> Bài 5</h3>
+                          <img src="so-do-3-khoi/BAI-5.png" alt="">
+                        </div>
+                   
+                          <br/>
+                   
+                        </div>
+                    
+    
+               
+                </div>
+             </div>
+              
+           </div>
+        </div>
+     
+      </div>
+    </section>
+
+  
+
+
+    
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <!-- wowjs  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+  </script>
+ 
+ <!-- my js -->
+ <script src="./index.js"></script>
+</body>
+
+</html>
